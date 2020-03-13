@@ -2,4 +2,5 @@ SELECT
   COUNT(*)
 FROM "TextitSessions"
 WHERE
-  data -> 'fields' ->> 'handoff_timestamp' IS NOT NULL;
+  "createdAt" > '2/01/20'
+  AND data -> 'fields' ->> 'handoff_timestamp' IS NOT NULL;
