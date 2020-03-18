@@ -93,4 +93,4 @@ select
   data ->> 'language' as language,
   data ->> 'created_on' as created_on,
   data ->> 'modified_on' as modified_on
-from public. "TextitSessions";
+from "TextitSessions";
