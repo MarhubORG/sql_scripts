@@ -1,4 +1,4 @@
-psql -h marhub-database2.cytzl3ilzpvr.us-east-1.rds.amazonaws.com -d marhub_dev -U marhub_readonly   -c 'COPY (
+psql -h marhub-database2.cytzl3ilzpvr.us-east-1.rds.amazonaws.com -d marhub_dev -U marhub_readonly -c 'COPY (
 SELECT "textitSessionId" as "Unique Session Id",
 "textitContactUuid" as "Contact UUID",
 "createdAt" as "Created On",
